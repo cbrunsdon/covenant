@@ -1,1 +1,1 @@
-window.location = chrome.extension.getURL("main.html");
+location.replace(chrome.extension.getURL("main.html"));
