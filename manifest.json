@@ -1,9 +1,13 @@
 {
   "name": "Covenant",
-  "version": "1.0",
+  "version": "1.1",
+  "manifest_version": 2,
   "description": "A google-chrome extension so forcing me to keep up my end of The Deal.",
+  "web_accessible_resources": [
+    "main.html"
+  ],
   "content_scripts": [ {
-    "matches": ["http://*.reddit.com/*"],
+    "matches": ["https://*.reddit.com/*"],
     "js": ["covenant_infringement.js"]
   } ],
   "app": {
